@@ -1,0 +1,44 @@
+{
+  "name": "relay-variables-mismatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "relay": "relay-compiler --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-relay": "^16.0.0",
+    "relay-runtime": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "@babel/preset-react": "^7.23.3",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "babel-jest": "^29.7.0",
+    "babel-plugin-relay": "^16.0.0",
+    "graphql": "^16.8.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "relay-compiler": "^16.0.0",
+    "relay-test-utils": "^16.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "relay"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
